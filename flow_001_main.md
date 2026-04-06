@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[Usuario entra en TenderAI] --> B[Configura perfil de empresa]
     B --> C[El sistema valida y completa datos básicos]
