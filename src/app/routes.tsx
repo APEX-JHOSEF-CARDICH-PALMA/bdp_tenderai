@@ -1,23 +1,28 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { AppShell } from './layout/AppShell'
-
-function Placeholder({ title }: { title: string }) {
-  return <h1 style={{ margin: 0, fontSize: 24 }}>{title}</h1>
-}
+import { Layout } from './figma-import/src/app/components/Layout'
+import { Dashboard } from './figma-import/src/app/components/Dashboard'
+import { Oportunidades } from './figma-import/src/app/components/Oportunidades'
+import { Pipeline } from './figma-import/src/app/components/Pipeline'
+import { Documentacion } from './figma-import/src/app/components/Documentacion'
+import { Reporting } from './figma-import/src/app/components/Reporting'
+import { Configuracion } from './figma-import/src/app/components/Configuracion'
+import { CompanyProfile } from './figma-import/src/app/components/CompanyProfile'
+import { TenderExecution } from './figma-import/src/app/components/TenderExecution'
 
 export function AppRoutes() {
   return (
     <Routes>
-      <Route element={<AppShell />}>
-        <Route path="/" element={<Navigate to="/dashboard" replace />} />
-        <Route path="/dashboard" element={<Placeholder title="Dashboard" />} />
-        <Route path="/oportunidades" element={<Placeholder title="Oportunidades" />} />
-        <Route path="/pipeline" element={<Placeholder title="Pipeline" />} />
-        <Route path="/documentacion" element={<Placeholder title="Documentación" />} />
-        <Route path="/reporting" element={<Placeholder title="Reporting" />} />
-        <Route path="/configuracion" element={<Placeholder title="Configuración" />} />
-        <Route path="/ayuda" element={<Placeholder title="Ayuda" />} />
-        <Route path="*" element={<Navigate to="/dashboard" replace />} />
+      <Route element={<Layout />}>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Navigate to="/" replace />} />
+        <Route path="/oportunidades" element={<Oportunidades />} />
+        <Route path="/pipeline" element={<Pipeline />} />
+        <Route path="/documentacion" element={<Documentacion />} />
+        <Route path="/reporting" element={<Reporting />} />
+        <Route path="/configuracion" element={<Configuracion />} />
+        <Route path="/company-profile" element={<CompanyProfile />} />
+        <Route path="/tender/:id" element={<TenderExecution />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>
   )

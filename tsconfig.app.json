@@ -21,5 +21,11 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": [
+    "src/app/figma-import/src/app/components/ui/**/*",
+    "src/app/figma-import/src/app/components/figma/**/*",
+    "src/app/figma-import/src/app/App.tsx",
+    "src/app/figma-import/src/app/routes.tsx"
+  ]
 }

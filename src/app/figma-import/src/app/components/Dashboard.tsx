@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { 
   TrendingUp, 
   Calendar, 
@@ -15,7 +15,6 @@ import {
   CalendarClock,
   FileWarning,
   AlertCircle,
-  TrendingDown
 } from "lucide-react";
 import { oportunidades, estadisticas, pipelineResumen, alertasCriticas, insightSemanal, accionesRapidas } from "../data/mockData";
 
@@ -177,7 +176,7 @@ export function Dashboard() {
                   </tr>
                 </thead>
                 <tbody>
-                  {oportunidadesPrioritarias.map((op, index) => (
+                  {oportunidadesPrioritarias.map((op) => (
                     <tr key={op.id} className="border-b border-gray-100 hover:bg-gray-50">
                       <td className="py-4 px-6">
                         <div className="flex items-start gap-3">

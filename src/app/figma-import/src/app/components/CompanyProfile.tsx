@@ -1,4 +1,4 @@
-import { Building2, MapPin, Users, Award, FileText, CheckCircle, AlertCircle, Plus } from "lucide-react";
+import { Building2, Award, CheckCircle, AlertCircle, Plus } from "lucide-react";
 
 export function CompanyProfile() {
   const completeness = 78;

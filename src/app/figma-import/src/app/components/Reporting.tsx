@@ -1,4 +1,4 @@
-import { TrendingUp, TrendingDown, BarChart3, PieChart, Calendar } from "lucide-react";
+import { TrendingUp, TrendingDown, Calendar } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, PieChart as RePieChart, Pie, Cell } from "recharts";
 
 export function Reporting() {
@@ -139,7 +139,7 @@ export function Reporting() {
                 cx="50%"
                 cy="50%"
                 labelLine={false}
-                label={({ nombre, valor }) => `${nombre} ${valor}%`}
+                label
                 outerRadius={80}
                 fill="#8884d8"
                 dataKey="valor"

@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { Eye, MoreVertical, Filter } from "lucide-react";
 import { oportunidades } from "../data/mockData";
 

@@ -1,14 +1,12 @@
 import { useState } from "react";
-import { Link } from "react-router";
-import { Search, Filter, SlidersHorizontal, Eye, Bookmark, X, TrendingUp, AlertTriangle, CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Search, SlidersHorizontal, Eye, Bookmark, X, AlertTriangle, CheckCircle } from "lucide-react";
 import { oportunidades } from "../data/mockData";
 
 export function Oportunidades() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedSector, setSelectedSector] = useState("todos");
   const [selectedEstado, setSelectedEstado] = useState("todos");
-  const [viewMode, setViewMode] = useState<'grid' | 'list'>('list');
-
   const sectores = ["todos", "IT y Digital", "Ciberseguridad", "Educación", "Energía", "Salud", "Movilidad", "Gobierno Digital"];
   const estados = ["todos", "critico", "pendiente", "listo"];
 

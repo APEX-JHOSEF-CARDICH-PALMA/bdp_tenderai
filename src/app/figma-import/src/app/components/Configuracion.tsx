@@ -1,4 +1,4 @@
-import { Bell, Shield, User, Palette, Database, HelpCircle } from "lucide-react";
+import { Bell, Shield, User, Database, HelpCircle } from "lucide-react";
 
 export function Configuracion() {
   return (

@@ -1,5 +1,5 @@
-import { useParams, Link } from "react-router";
-import { ArrowLeft, Calendar, Euro, MapPin, Award, TrendingUp, CheckCircle, Circle, AlertCircle, Upload, Download, FileText, User, MessageSquare } from "lucide-react";
+import { useParams, Link } from "react-router-dom";
+import { ArrowLeft, Calendar, Euro, MapPin, Award, TrendingUp, CheckCircle, Circle, AlertCircle, Upload, Download, FileText, User } from "lucide-react";
 import { oportunidades } from "../data/mockData";
 
 export function TenderExecution() {
