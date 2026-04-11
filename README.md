@@ -46,3 +46,17 @@ flowchart TD
     E --> F[Gaps detectados]
     F --> G[Recomendación]
     G --> H[Acción: aplicar / descartar / revisar]
+```
+
+---
+
+## 📚 Índice de Flujos
+
+1. [flow_000_main_journey.md](flow_000_main_journey.md) - Main Journey
+2. [flow_001_dashboard.md](flow_001_dashboard.md) - Dashboard
+3. [flow_002_company_profile.md](flow_002_company_profile.md) - Company Profile
+4. [flow_003_scoring.md](flow_003_scoring.md) - Scoring
+5. [flow_004_decision.md](flow_004_decision.md) - Decision
+6. [flow_005_pipeline.md](flow_005_pipeline.md) - Pipeline
+7. [flow_006_tender_execution.md](flow_006_tender_execution.md) - Tender Execution
+8. [flow_007_reporting.md](flow_007_reporting.md) - Reporting
